@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".EditSchedule"
+    tools:layout_editor_absoluteY="25dp">
+    <CalendarView
+        android:id="@+id/editScheduleCalander"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#8e9aaf"
+        app:layout_constraintBottom_toTopOf="@+id/editScheduleBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:fontFamily="@font/universal_font"
+        android:text="Select Days to Request Off"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="@color/textView"
+        app:layout_constraintBottom_toTopOf="@+id/editScheduleCalander"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/editScheduleBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@mipmap/back_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editScheduleCalander" />
+</android.support.constraint.ConstraintLayout>

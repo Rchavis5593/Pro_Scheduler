@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ViewEmployeeTasks"
+    tools:layout_editor_absoluteY="25dp">
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:text="View Tasks"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/textView"
+        app:layout_constraintBottom_toTopOf="@+id/timeForTaskListView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/viewEmployeeTasksBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_marginBottom="17dp"
+        android:layout_marginStart="16dp"
+        android:background="@mipmap/back_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dayForTasksListView" />
+    <ListView
+        android:id="@+id/dayForTasksListView"
+        android:layout_width="0dp"
+        android:layout_height="471dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginStart="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/viewEmployeeTasksBackButton"
+        app:layout_constraintEnd_toStartOf="@+id/tasksListView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+    <ListView
+        android:id="@+id/timeForTaskListView"
+        android:layout_width="0dp"
+        android:layout_height="436dp"
+        android:layout_marginBottom="76dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tasksListView"
+        app:layout_constraintStart_toEndOf="@+id/dayForTasksListView"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ListView
+        android:id="@+id/tasksListView"
+        android:layout_width="0dp"
+        android:layout_height="510dp"
+        android:layout_marginBottom="67dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dayForTasksListView"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+</android.support.constraint.ConstraintLayout>
